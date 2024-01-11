@@ -9,7 +9,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compile the source code'
-                bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                bat 'mvn -Dmaven.test.failure.ignore=true clean package'
             }
             post {
                 success {
