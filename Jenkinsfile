@@ -1,7 +1,8 @@
 pipeline {
     agent any 
-       tools {
+    tools {
         maven "MAVEN_HOME"
+        jdk "JDK8"
     }
     stages {
         stage('Static Analysis') {
